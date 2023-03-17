@@ -1,0 +1,20 @@
+.colorBar_spectral{
+      color: #FFFFFF;
+      position: relative;
+      font-family: sans-serif;
+      font-color: #100000;
+      /*bottom: 20px;*/
+      left: 10%;
+      right: 10%;
+      bottom: 1%;
+      top: 1%;
+      z-index: 2;
+      width: 80%;
+      height: 30%;
+      transition: width 2s, height 2s;
+      border-radius: 7%;
+      padding: 0;
+      background: linear-gradient(to right, #2b83ba 0%, #abdda4 25%, #ffffbf 50%, #fdae61 75%, #d7191c 100%);
+}
+
+
