@@ -17,7 +17,6 @@
     right: 1px;
     z-index: 2;
     width: 20%;
-    /*height: 100px;      */
     background: rgba(80,80,80,.75);
     transition: width 2s, height 2s;
     border-radius: 7px;
@@ -28,7 +27,7 @@
     font-family: sans-serif;
     font-color: #FF0000;
     color: #FFFFFF;
-    bottom: 180px;
+    bottom: 30px;
     right: 1px;
     z-index: 2;
     width: 20%;
@@ -38,7 +37,12 @@
     border-radius: 7px;
 }
 
-.colorbarPanel {
+.colorbarNumber{
+  width: 4em;
+}
+
+
+/*.colorbarPanel {
   color: #FFFFFF;
   position: absolute;
   font-family: sans-serif;
@@ -50,4 +54,4 @@
   transition: width 2s, height 2s;
   overflow: hidden;
   border-radius: 5px;
-}
+}*/

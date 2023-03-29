@@ -13,42 +13,42 @@
     </head>
     <body>
         <!-- setting panel -->
+
         <div id='colorBarButton' class="settingPannel">
+
             <div class="grid-container">
-                <label>Opacity: <span id="slider-value">100%</span></label>
+            <label>Opacity: <span id="slider-value">100%</span></label>
                 <input id="slider" type="range" min="0" max="100" step="5" value="100"/>
                 <div>
                     <span style="float:left;" > 
                         <label>Colormap range: </label>
-                        <input type="number" value="0" step="5" id="colorBarMin" size="2" onchange="updateWMS(lyr)">
+                        <input class="colorbarNumber" type="number" value="0" step="5" id="colorBarMin" size="2" onchange="updateWMS(lyr)">
                     </span>
                     <span style="float:left;">
                         <label>-</label>
-                        <input type="number" value="20" step="5" id="colorBarMax" size="2" onchange="updateWMS(lyr)">
+                        <input class="colorbarNumber" type="number" value="50" step="5" id="colorBarMax" size="2" onchange="updateWMS(lyr)">
                     </span>
                 </div>
-            </div>    
-        </div>
-        <!-- colorbar -->
-        <div class="colorbarPanel" id="colorbarPanel">
+            </div> 
+            <hr>
             <div id='colorBar' class="colorBar_spectral">        
                 <p style="text-align:center; padding-top:0%">
                     <span id='colorBarLeft' style="float:left;color:black;top:0"> 0 </span>
                     <span id='colorBarCenter' style="float:center;color:black;top:0"> 10 </span>
                     <span id='colorBarRight' style="float:right;color:black;top:0"> 20 </span>
                 </p>
-             </div>  
-             <p style="text-align:center;">    
+            </div>  
+            <p style="text-align:center;">    
                 <span id='unit'> Subsidence rate (cm/year) </span>
-             </p>
-         </div>
-        <!-- quickinfo -->
-        <div id='quickInfo' class='quickInfoPanel'>
+            </p>
+            <hr>
             <div class="grid-container">
-            <!-- <div>Subsidence rate (cm/year): <span id='Subsidence'></span></div> -->
-            <div>Lon,Lat: <span id='Lon'></span>,<span id='Lat'></span></div>
+                <!-- <div>Subsidence rate (cm/year): <span id='Subsidence'></span></div> -->
+                <div>Lon,Lat: <span id='Lon'></span>,<span id='Lat'></span></div>
             </div>    
         </div>
+
+
         <div id="map"></div>
         <script src="basemaps.js"></script>
         <script src="map.js"></script>
