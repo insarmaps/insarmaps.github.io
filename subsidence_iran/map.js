@@ -1,3 +1,5 @@
+var minZoom = 1
+var maxZoom = 14
 
 /// set wms_env based on min and max text boxes
 function WMScolormap(){
@@ -37,8 +39,8 @@ function addDataLayer() {
             env:subs_env,
             tms: true, 
             opacity: Opacity,
-            minZoom: 1, 
-            maxZoom: 13,
+        		minZoom: minZoom, 
+        		maxZoom: maxZoom,
             attribution: "Iran Subsidence map. Mahmud Haghighi, 2022, contains modified Copernicus Sentinel data 202, processed by ESA.", 
         })
     var overlaymaps = {"Subsidence Iran":lyr_subs_wms}
@@ -87,8 +89,8 @@ var map = L.map('map', {
     container: 'map',
     center: center,
     zoom: zoom,
-    minZoom: 1,
-    maxZoom: 13,
+    minZoom: minZoom, 
+    maxZoom: maxZoom,
     layers: [osm]
 });
 
