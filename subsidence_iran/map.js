@@ -29,7 +29,7 @@ function addDataLayer() {
     var subs_env = WMScolormap()
     Opacity = parseInt(document.getElementById("slider").value, 10) / 100
     lyr_subs_wms = L.tileLayer.wms(
-        'https://serve.mapsdev.com:8443/geoserver/subsidence/wms?service=WMS',
+        'https://serve2.mapsdev.com/geoserver/subsidence/wms?service=WMS',
         {
             VERSION:'1.1.0',
             LAYERS:'subsidence:subsidecne_v0301',
