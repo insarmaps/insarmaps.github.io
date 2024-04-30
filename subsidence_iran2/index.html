@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iran Subsidence Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="map.css"> 
+    <link rel="stylesheet" href="colorbar.css"> 
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<body>
+
+    <div id="map"></div>
+        <!-- setting panel -->
+    <div id='settingPannel' class="settingPannel">
+        <div>
+            <label>Opacity: <span id="slider-value">100%</span></label>
+            <input id="slider" class="slider" type="range" min="0" max="100" step="5" value="80"/>
+        </div>
+        <hr>
+
+        <div id="colorBarPanelSubsidence">
+            <div class="color-bar-container">
+                <div class="color-bar-spectral" id="colorBar">
+                    <div class="color-label" id="colorbarLeft">0</div>
+                    <div class="color-label" id="colorbarCenter">12.5</div>
+                    <div class="color-label" id="colorbarRight">25</div>
+                </div>
+            </div>
+            <div class="arrow-controls">
+                <a href="#" id="increase" style="text-decoration:none; margin-left: 10px;">⬆️</a>
+                <a href="#" id="decrease" style="text-decoration:none;">⬇️</a>
+            </div>
+        </div>
+        <div class="color-bar-label">
+            Land Subsidence (cm/a)
+        </div>
+
+
+
+
+
+
+
+            <div id="colorBarPanelSeasonal" hidden>
+                <div class="color-bar-viridis" id="colorBar">
+                    <div class="color-label" id="colorbarLeft">0</div>
+                    <div class="color-label" id="colorbarCenter">2</div>
+                    <div class="color-label" id="colorbarRight">4</div>
+                </div>
+                <div class="color-bar-label">
+                    Seasonal amplitude (cm)
+                </div>
+                <hr>
+            </div>
+
+            <div class="grid-container">
+                <div>Lon,Lat: <span id='Lon'></span>,<span id='Lat'></span></div>
+                <br>
+                <div>Value: <span id='Val'></span></div>
+            </div>    
+            <hr> 
+            <p>
+                <a href="#" id="moreInfo">More information</a>
+            </p>
+        </div>
+
+    
+
+    <div id="quick-info-panel">
+        <div id="popup" class="popup-container">
+            <h4>About this map</h4>
+            <p><a href="#" id="closeInfo">Close</a></p>
+        </div>
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
